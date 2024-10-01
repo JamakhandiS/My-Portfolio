@@ -1,0 +1,631 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4270f0;
+    --background-color: #edeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 80px;
+
+
+}
+
+nav .left a {
+
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+nav .right a {
+
+    color: var(--text-color);
+    margin: 0 10px;
+
+}
+
+nav .right a:last-child {
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
+
+nav .right a span {
+    margin-left: 5px;
+
+}
+
+/* Section 1 */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px 100px 90px;
+    margin: 120px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero .text {
+    padding: 20px 0 20px 50px;
+
+}
+
+.hero .text h2 {
+    font-size: 45px;
+}
+
+.hero .text .links {
+    margin-top: 25px;
+}
+
+.hero .text .links a {
+
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.hero .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.hero .headshot {
+    padding: 0 50px;
+    margin-right: 80px;
+}
+
+.hero .headshot img {
+    width: 300px;
+    border-radius: 100%;
+}
+
+/* Skills section */
+.skills-sec {
+    background-color: whitesmoke;
+    padding: 70px;
+    padding-bottom: 100px;
+    margin-bottom: 180px;
+}
+
+.skills-sec h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+/* .skills-sec .cells{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+}
+.skills-sec .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #131313;
+    border-radius: 5px;
+} */
+.skills-sec .cells {
+    display: flex;
+    justify-content: center;
+    /* Center all skill cells */
+    flex-wrap: wrap;
+    /* Ensure the cells wrap on smaller screens */
+    gap: 20px;
+    /* Add spacing between cells */
+}
+
+.skills-sec .cells .cell {
+    display: flex;
+    justify-content: center;
+    /* Center the content inside each cell */
+    align-items: center;
+    /* Vertically align the items */
+    gap: 10px;
+    /* Space between items within each cell */
+    width: 150px;
+    /* Fixed width for uniformity */
+    padding: 15px 25px;
+    /* Increased padding for a more spacious look */
+    margin: 10px;
+    border: 2px solid #131313;
+    /* Dark border for sharp contrast */
+    border-radius: 10px;
+    /* Softer corners for a modern feel */
+    background-color: #fff;
+    /* White background for the cells */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+.skills-sec .cells .cell:hover {
+    background-color: #e3e3e3;
+    /* Light gray background on hover */
+    border-color: #000;
+    /* Darker border on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.skills-sec i {
+    font-size: 30px;
+}
+
+
+
+
+@media(max-width:850px) {
+
+    /* Section 1 */
+    .hero .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:740px) {
+
+    /* Section 1 hero*/
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero .headshot img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 685px) {
+
+    /* NAVBAR */
+
+    nav {
+
+        padding: 0 20px;
+
+    }
+
+    nav .right a {
+
+        font-size: 22px;
+
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+
+        display: none;
+    }
+
+    /* section 1 : Hero   */
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero .text h2 {
+        font-size: 30px;
+    }
+
+}
+
+/* Project Section */
+.Project {
+    padding: 20px;
+    /* Light background for the project section */
+}
+
+.Project h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    max-width: 1200px;
+    /* Max width for the project container */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.p1,
+.p2,
+.p3 {
+    display: flex;
+    /* Flexbox to align image and content side by side */
+    margin-bottom: 20px;
+    /* Spacing between projects */
+}
+
+
+/* Left Section (Image) */
+.p-div1 {
+    flex: 1;
+    /* Left section takes 1 part of space */
+    padding: 20px;
+    /* Padding for the image */
+}
+
+img {
+    padding: 20px 0 20px 20px;
+    height: 300px;
+    width: 500px;
+    /* Make image responsive */
+    border-radius: 30px;
+
+}
+
+/* Right Section (Content) */
+.p-div2 {
+    flex: 2;
+    padding: 20px 20px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: baseline;
+}
+
+/* Align content vertically */
+
+h3 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+.p-div2 span {
+    color: #444444;
+    /* Lighter color for year */
+    margin-top: 5px;
+    /* Space below the heading */
+}
+
+.p-div2 .btn {
+    color: white;
+    display: inline-block;
+    /* Make the button inline */
+    padding: 10px 15px;
+    /* Button padding */
+    margin-left: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.p-div2 .btn:hover {
+    background: #5c5b5b;
+}
+
+/* Experience */
+
+/* .ex-sec{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.ex-sec h2{
+    text-align: center;
+    font-size:35px;
+}
+.ex-sec .exp div{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid black;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.ex-sec h3{
+    padding-bottom: 1%;
+}
+.ex-sec .exp div:hover{
+    color: var(--text-color);
+    border: 2px solid rgb(18, 18, 19)
+}  */
+.ex-sec {
+    padding: 60px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+ .ex-sec h2 {
+    font-size:35px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* Flexbox layout */
+.exp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual experience block */
+.exp div {
+    background-color: gray;
+    border-left: 4px solid #1d361d;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(16, 53, 37, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+
+/* Hover effect */
+.exp div:hover {
+    transform: scale(1.05);
+    border-left-color: #c2ecc3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles (h3) */
+.exp h3 {
+    color: #9dffef;
+    margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.exp div {
+    font-size: 15px;
+    color: #ffffff;
+    background-image: url(Emer.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .exp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ex-sec h2 {
+        font-size:30px;
+    }
+    .exp-sec div {
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* Edcuation */
+
+/* .edcu-sec{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.edcu-sec h2{
+    text-align: center;
+    font-size:35px;
+}
+.edc{
+    display:flex
+}
+.edcu-sec .edc div{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid black;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.edcu-sec h3{
+    padding-bottom: 1%;
+}
+.edcu-sec .edc div:hover{
+    color: var(--text-color);
+    border: 2px solid black
+}  */
+
+.edcu-sec {
+    padding: 20px 20px;
+    /* Reduced side padding for a cleaner look */
+    margin-bottom: 100px;
+    text-align: center;
+    /* Centers all text-based elements inside */
+}
+
+.edcu-sec h2 {
+    font-size: 35px;
+    font-weight: bold;
+    /* Make heading stand out */
+    color: #000000;
+    /* Dark shade for better readability */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* Adds space below the title */
+}
+
+.edc {
+    display: flex;
+    justify-content: center;
+    /* Centers the divs horizontally */
+    flex-wrap: wrap;
+    /* Ensures the divs wrap for smaller screens */
+    gap: 20px;
+    /* Adds space between elements */
+}
+
+.edcu-sec .edc div {
+    padding: 20px 30px;
+    /* Increased padding for better spacing */
+    margin: 10px;
+    border: 2px solid #ffffff;
+    /* Use a blue border for visual appeal */
+    border-radius: 8px;
+    /* Softer corner for modern look */
+    background-color: #cbcdce;
+    /* Light background for the boxes */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+    width: 300px;
+    /* Fixed width for uniformity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.edcu-sec h3 {
+    padding-bottom :10px;
+    color: #34495e;
+    /* Darker color for better readability */
+}
+
+.edcu-sec .edc div:hover {
+    color: #2c3e50;
+    /* Change text color on hover */
+    border: 2px solid #34495e;
+    /* Darker border on hover */
+    background-color: #e3e3e3;
+    /* Light hover effect */
+    transform: scale(1.05);
+    /* Slight scaling for emphasis */
+}
+
+.edcu-sec i {
+    padding: 20px 0 20px 0;
+    font-size: 60px;
+}
+@media(max-width:786px){
+  
+        .edc {
+            flex-direction: column;
+            align-items: center;
+        }
+        .edcu-sec h2{
+            font-size: 30px;
+        }
+        .edu div{
+            font-size: 10px;
+        }
+}
+
+/* // project session responsive */
+@media screen and (max-width: 800px) {
+    .p1,
+    .p2,
+    .p3 {
+        flex-direction: column;
+        /* Stack the image and content vertically */
+        align-items: center;
+        /* Center align the content */
+    }
+
+    .p-div1,
+    .p-div2 {
+        width: 100%;
+        /* Ensure the image and content take full width */
+        padding: 10px;
+        /* Add padding for better spacing */
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        /* Make the image fully responsive */
+        border-radius: 30px;
+        /* Reduced border-radius for smaller screens */
+    }
+
+    .p-div2 {
+        padding-left: 10px;
+        text-align: center;
+        /* Center-align the content */
+    }
+
+    h3 {
+        font-size: 20px;
+        /* Slightly smaller font size for heading */
+    }
+
+    .p-div2 .btn {
+        margin-left: 10px;
+        margin-top: 15px;
+        
+        /* Adjust button margin */
+    }
+}
+
+/* Extra Small Screen Styles (Mobile) */
+@media screen and (max-width: 480px) {
+    .Project h2 {
+        font-size: 30px;
+        /* Adjust heading size for small screens */
+    }
+
+    h3 {
+        font-size: 20px;
+        /* Adjust heading size for mobile screens */
+    }
+
+    .p-div2 .btn {
+        font-size: 14px;
+        padding: 8px 0 12px 10px;
+        /* Adjust button size for mobile */
+    }
+}
+
+.cta-sec div{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding:10px;
+}
+.cta-sec button{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+.cta-sec button:hover{
+    background-color: #3c3c3c;
+}
