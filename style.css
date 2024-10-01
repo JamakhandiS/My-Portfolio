@@ -127,22 +127,6 @@ nav .right a span {
     font-size: 35px;
 }
 
-/* .skills-sec .cells{
-    display: flex;
-    justify-content:center ;
-    flex-wrap: wrap;
-}
-.skills-sec .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 150px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid #131313;
-    border-radius: 5px;
-} */
 .skills-sec .cells {
     display: flex;
     justify-content: center;
@@ -190,6 +174,29 @@ nav .right a span {
 .skills-sec i {
     font-size: 30px;
 }
+@media(max-width:750px) {
+    .skills-sec{
+        margin: 0px;
+        padding: 20px;
+    }
+    .skills-sec .cells{
+        margin-bottom: 0px;
+    }
+    .skills-sec h2{
+        font-size: 30px;
+    }
+    .skills-sec span{
+        font-size: 15px;
+        width:60px;
+    }
+    .skills-sec i {
+        font-size: 25px;
+    }
+    .skills-sec .cell{
+        text-align: center;
+    }
+    
+}
 
 
 
@@ -210,6 +217,7 @@ nav .right a span {
     }
 
     .hero .headshot img {
+        align-items: center;
         width: 200px;
     }
 }
@@ -401,13 +409,13 @@ h3 {
 /* Hover effect */
 .exp div:hover {
     transform: scale(1.05);
-    border-left-color: #c2ecc3;
+    border-left-color: #4c504c;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Titles (h3) */
 .exp h3 {
-    color: #9dffef;
+    color: #f6fffe;
     margin-bottom: 10px;
 }
 
@@ -589,6 +597,7 @@ h3 {
 
     .p-div2 .btn {
         margin-left: 10px;
+        margin-right: 10px;
         margin-top: 15px;
         
         /* Adjust button margin */
@@ -609,7 +618,7 @@ h3 {
 
     .p-div2 .btn {
         font-size: 14px;
-        padding: 8px 0 12px 10px;
+        padding: 8px 10px 8px 10px;;
         /* Adjust button size for mobile */
     }
 }
