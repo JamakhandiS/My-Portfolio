@@ -186,8 +186,8 @@ nav .right a span {
         font-size: 30px;
     }
     .skills-sec span{
-        font-size: 15px;
-        width:60px;
+        font-size: 20px;
+        width:80px;
     }
     .skills-sec i {
         font-size: 25px;
@@ -212,13 +212,16 @@ nav .right a span {
 @media(max-width:740px) {
 
     /* Section 1 hero*/
-    .hero {
+    .hero {margin:30px;
         flex-direction: column-reverse;
     }
 
     .hero .headshot img {
         align-items: center;
         width: 200px;
+    }
+    .hero .text .links i , .hero .text .links span{
+        font-size: 16px;
     }
 }
 
@@ -439,8 +442,12 @@ h3 {
     .ex-sec h2 {
         font-size:30px;
     }
-    .exp-sec div {
-        font-size: 10px;
+    .ex-sec h3{
+        margin-top:0px;
+        font-size: 25px;
+    }
+    .ex-sec p{
+        font-size: 18px;
     }
 }
 
@@ -448,32 +455,6 @@ h3 {
 
 
 /* Edcuation */
-
-/* .edcu-sec{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-.edcu-sec h2{
-    text-align: center;
-    font-size:35px;
-}
-.edc{
-    display:flex
-}
-.edcu-sec .edc div{
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid black;
-    border-width: 2px;
-    border-radius: 5px;
-}
-.edcu-sec h3{
-    padding-bottom: 1%;
-}
-.edcu-sec .edc div:hover{
-    color: var(--text-color);
-    border: 2px solid black
-}  */
 
 .edcu-sec {
     padding: 20px 20px;
@@ -523,6 +504,7 @@ h3 {
 }
 
 .edcu-sec h3 {
+    margin-top:0px;
     padding-bottom :10px;
     color: #34495e;
     /* Darker color for better readability */
@@ -550,10 +532,15 @@ h3 {
             align-items: center;
         }
         .edcu-sec h2{
+            margin-top:15px;
+            margin-bottom:15px;
             font-size: 30px;
         }
         .edu div{
             font-size: 10px;
+        }
+        .edu p{
+            font-size:16px;
         }
 }
 
@@ -577,6 +564,8 @@ h3 {
     }
 
     img {
+        padding:20px 0 20px 0px;
+
         height: auto;
         width: 100%;
         /* Make the image fully responsive */
@@ -591,7 +580,7 @@ h3 {
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 25px;
         /* Slightly smaller font size for heading */
     }
 
@@ -601,6 +590,9 @@ h3 {
         margin-top: 15px;
         
         /* Adjust button margin */
+    }
+    p{
+        font-size:18px;
     }
 }
 
@@ -621,10 +613,12 @@ h3 {
         padding: 8px 10px 8px 10px;;
         /* Adjust button size for mobile */
     }
+    p{
+        font-size: 18px;
+    }
 }
 
 .cta-sec div{
-    font-size: 30px;
     text-align: center;
     margin-bottom: 50px;
     padding:10px;
@@ -637,4 +631,15 @@ h3 {
 }
 .cta-sec button:hover{
     background-color: #3c3c3c;
+}
+
+
+@media(max-width:760px){
+    .cta-sec button{
+        font-size: 16px;
+    }
+    .cta-sec a{
+        padding:5px;
+    }
+    
 }
