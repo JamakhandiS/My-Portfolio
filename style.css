@@ -187,7 +187,7 @@ nav .right a span {
     }
     .skills-sec span{
         font-size: 20px;
-        width:80px;
+        width:fit-content;
     }
     .skills-sec i {
         font-size: 25px;
@@ -206,6 +206,10 @@ nav .right a span {
     /* Section 1 */
     .hero .text h2 {
         font-size: 35px;
+    }
+    .hero .text {
+        padding: 0px;
+    
     }
 }
 
@@ -574,7 +578,7 @@ h3 {
     }
 
     .p-div2 {
-        padding-left: 10px;
+        padding-left: 0px;
         text-align: center;
         /* Center-align the content */
     }
@@ -592,7 +596,7 @@ h3 {
         /* Adjust button margin */
     }
     p{
-        font-size:18px;
+        font-size:16px;
     }
 }
 
@@ -614,7 +618,7 @@ h3 {
         /* Adjust button size for mobile */
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -642,4 +646,9 @@ h3 {
         padding:5px;
     }
     
+}
+@media screen and (max-width: 480px) {
+    .hero p , .exp p , .Project p {
+        text-align: justify;
+    }
 }
